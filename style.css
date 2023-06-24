@@ -1,0 +1,180 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.group{
+    border: 10px solid red;
+
+    position: relative;
+    background: radial-gradient(circle at 50% 50%,rgb(51,10,10),rgb(5,5,21));
+     
+}
+header{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #39053163;
+    padding: 20px 50px;
+    position: absolute;
+    z-index: 10;
+    
+    }
+
+header .logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    }
+    header .logo a b{
+        color: #fd003b;
+    }
+
+header .logo i{
+    color: white;
+    font-size: 25px;
+}
+    header .menu{
+
+display: flex;
+align-items: center;
+} 
+.menu .menu-content{
+ 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.menu .menu-content a{  
+
+color: white; 
+text-decoration: none;
+
+}
+.menu .menu-content a:hover{
+    color: #fd003b;
+}
+.menu i{
+     
+    display: none;
+}
+/* header end */
+/*navbar start*/
+nav{
+border: 10px solid blue;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+nav .left{
+    border: 8px solid saddlebrown;
+    width: 700px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px;
+    color: white;
+
+}
+/*social start*/
+.advert{
+    border: 10px solid purple;
+    background-color: #39053163;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*social end*/
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.18;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.advert img{
+    width:40px;
+    cursor: pointer;
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header{
+        background-color: green;
+    }
+    header .menu{
+        position: relative;
+    }
+    header .menu:hover .menu-content {
+        background-color: #ccc;
+        display: flex;
+        border: 5px solid red;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: red !important;
+    }
+    header .menu i {
+        display: flex; 
+        font-size: 25px;
+        color: white;
+    }
+    header .menu .menu-content{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    header{
+        background-color: green;
+    }
+    header .menu{
+        position: relative;
+    }
+    header .menu:hover .menu-content {
+        background-color: #ccc;
+        display: flex;
+        border: 5px solid red;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: red !important;
+    }
+    header .menu i {
+        display: flex; 
+        font-size: 25px;
+        color: white;
+    }
+    header .menu .menu-content{
+        display: none;
+    }
+}
